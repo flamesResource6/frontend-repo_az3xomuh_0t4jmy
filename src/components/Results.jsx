@@ -6,15 +6,15 @@ export default function Results() {
   ]
 
   return (
-    <section id="work" className="py-16 bg-slate-50">
+    <section id="work" className="py-16 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-slate-900 mb-8">Ověřené výsledky</h2>
+        <h2 className="text-3xl font-bold text-white mb-8">Ověřené výsledky</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {results.map((r) => (
-            <div key={r.label} className="p-6 rounded-xl bg-white border border-slate-200">
-              <p className="text-slate-500 text-sm mb-2">{r.label}</p>
-              <p className="text-2xl font-extrabold text-slate-900">{r.metric}</p>
-              <p className="text-slate-500 text-sm">{r.note}</p>
+            <div key={r.label} className="p-6 rounded-xl bg-white/5 border border-white/10">
+              <p className="text-slate-400 text-sm mb-2">{r.label}</p>
+              <p className="text-2xl font-extrabold text-white">{r.metric}</p>
+              <p className="text-slate-400 text-sm">{r.note}</p>
             </div>
           ))}
         </div>
